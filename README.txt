@@ -1,7 +1,7 @@
 # xm_bringup
 
-Creatd Date: 2015.6.17
+Creatd Date: 2015.11.1
 
-Authors: conperbaqi
+Authors: conperbaqi, myyerrol
 
 Function: Bring up xm_robot.
