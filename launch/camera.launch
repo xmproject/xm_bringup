@@ -1,0 +1,11 @@
+<launch>
+    <!--run the openni-->
+    <!--include file="$(find openni_launch)/launch/openni.launch" /-->
+
+    <include file="$(find tracking)/launch/detection_and_tracking.launch" />
+
+    <!--run TLD  -->
+    <node pkg="follower" name="follow_TLD" type="follow_TLD" />
+    <node pkg="follower" name="control" type="control" />
+
+</launch>

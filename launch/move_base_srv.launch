@@ -1,0 +1,6 @@
+<launch>
+    <include file="$(find xm_robothw)/launch/xm_load_base.launch"/>
+    <node name = "map_server" pkg = "map_server" type = "map_server" args = "$(find xm_robothw)/map/the_last.yaml"/>
+    <include file = "$(find xm_bringup)/launch/hokuyo_bringup.launch" />
+    <include file = "$(find xm_2dnav)/launch/move_base_amcl_2.5cm.launch"/>
+</launch>

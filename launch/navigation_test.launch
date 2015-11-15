@@ -1,0 +1,5 @@
+<launch>
+   <include file = "$(find xm_bringup)/launch/move_base_srv.launch" />
+   <include file = "$(find xm_bringup)/launch/openni_srv.launch" />
+   <include file = "$(find xm_bringup)/launch/other_srv.launch" />
+</launch>

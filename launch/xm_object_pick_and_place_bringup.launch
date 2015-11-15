@@ -1,0 +1,5 @@
+<launch>
+	<include file="$(find xm_arm_bringup)/launch/xm_arm_and_gripper_bringup.launch" />
+	<include file="$(find xm_bringup)/launch/xm_robothw_and_serial_bringup.launch" />
+	<include file="$(find xm_bringup)/launch/xm_openni_and_artrack_bringup.launch" />
+</launch>

@@ -1,0 +1,4 @@
+<launch>
+	<include file="$(find openni_launch)/launch/openni.launch" />
+	<include file="$(find xm_ar_tags)/launch/ar_indiv_kinect.launch" />
+</launch>

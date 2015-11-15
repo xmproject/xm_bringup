@@ -1,0 +1,6 @@
+<launch>
+    <include file ="$(find openni_launch)/launch/openni.launch" />
+    <include file ="$(find tracking)/launch/detection_and_tracking.launch" />
+    <node pkg="xm_TLD" type = "control" name="TLD_cui" />
+    <node pkg="xm_TLD" type = "follow_TLD" name="TLD_cui2" />
+</launch>

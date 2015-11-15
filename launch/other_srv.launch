@@ -1,0 +1,8 @@
+<launch>
+      <node pkg = "xm_winserver" type ="xm_winserver2.py" name="winserver" />
+      <include file="$(find xm_dynamixels)/launch/dynamixels.launch" />
+      <node pkg = "xm_camera_link" type = "xm_camera_link" name = "xm_camera_link" />
+      <node pkg = "xm_camera_link" type = "tld_tracker.py" name = "tld_tracker" />
+      <node pkg = "xm_camera_link" type = "pan_move.py" name ="pan_move" />
+      <node pkg = "xm_enter_door" type ="xm_enter_door" name ="xm_enter_door" />
+</launch>
